@@ -1,30 +1,32 @@
 package com.interview.simulator;
 
 public class TheoryQuestions extends Questions {
+
     private String[] keyWords;
 
-    public TheoryQuestions (String questionText, int marks, String[] keyWords) {
-        super(questionText, marks);
+    public TheoryQuestions(String questionText, int marks,
+                           String difficulty, String[] keyWords) {
+        super(questionText, marks, difficulty);
         this.keyWords = keyWords;
     }
+
+    @Override
+    public void displayQuestion() {
+        System.out.println("Q: " + questionText);
+        System.out.print("Explain in short: ");
+    }
+
     @Override
     public int evaluateAnswer(String answer) {
-        if (answer == null || answer.trim().isEmpty()) {
-            return 0;
-        }
         answer = answer.toLowerCase();
-        int matchCount = 0;
+        int match = 0;
 
-        for (String keyword : keyWords){
-            if (answer.contains(keyword.toLowerCase())){
-                matchCount++;
+        for (String k : keyWords) {
+            if (answer.contains(k.toLowerCase())) {
+                match++;
             }
         }
-        System.out.println("Keywords matched: " + matchCount + " / " + keyWords.length);
 
-        int awardedMarks = (matchCount * marks) / keyWords.length;
-        System.out.println("Marks awarded: " + awardedMarks);
-
-        return awardedMarks;
+        return (match * marks) / keyWords.length;
     }
 }
