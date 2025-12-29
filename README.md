@@ -1,69 +1,92 @@
-# Interview Simulator – Core Java
+# Interview Simulator – Core Java Project
 
-A console-based Interview Simulator built using **Core Java**, designed to simulate a real technical interview environment.  
-The system evaluates candidates through **MCQs, theory questions, and coding logic questions** with automated scoring.
-
----
-
-## 🚀 Features
-
-- MCQ evaluation with instant scoring  
-- Theory answer evaluation using keyword matching  
-- Coding logic evaluation with keyword analysis and bonus marks  
-- Object-Oriented design using abstraction and inheritance  
-- Modular, extensible architecture  
-- Console-based interaction (no frameworks used)
+A console-based Interview Simulator built using pure Core Java.  
+This project simulates a real technical interview by evaluating a candidate through MCQs, theory questions, and coding logic questions, followed by a detailed scorecard and feedback.
 
 ---
 
-## 🛠️ Core Java Concepts Used
+## Features
 
-- Classes & Objects  
-- Abstraction (`abstract class`)  
-- Inheritance  
-- Polymorphism  
-- Arrays & Strings  
-- Encapsulation  
-- Collections (`ArrayList`)  
-- Scanner for input handling  
+- Role-based interview flow  
+  - Java Intern → Hard level questions  
+  - Java Developer → Medium level questions  
 
----
+- Question types:
+  - Multiple Choice Questions (MCQ)
+  - Theory-based questions
+  - Coding logic questions
 
-## ▶️ How It Works
+- Difficulty levels:
+  - MEDIUM
+  - HARD
 
-1. Candidate enters name and role  
-2. Interview engine starts  
-3. Questions are asked in sequence:
-   - MCQ
-   - Theory
-   - Coding logic
-4. Answers are evaluated automatically  
-5. Final score is calculated and displayed  
+- Automatic evaluation and scoring
+- Section-wise marks (MCQ / Theory / Coding)
+- Final percentage, grade, and interview feedback
+- Fully console-based application
 
 ---
 
-## ▶️ How to Run
+## Tech Stack
+
+- Language: Java  
+- Concepts Used:
+  - Object-Oriented Programming (OOP)
+  - Inheritance, Polymorphism, Abstraction
+  - Abstract classes and method overriding
+  - Collections (ArrayList)
+  - `instanceof` operator
+  - Scanner for input handling
+
+No frameworks or external libraries used.
+
+---
+
+## How It Works
+
+1. Candidate enters name and role.
+2. Interview engine selects questions based on role difficulty.
+3. Questions are displayed one by one in the console.
+4. Answers are evaluated automatically:
+   - MCQ → exact answer match
+   - Theory → keyword-based evaluation
+   - Coding → logic keywords and explanation length
+5. Marks are awarded instantly.
+6. Final scorecard, percentage, grade, and feedback are displayed.
+
+---
+
+## How to Run
 
 1. Clone the repository
-2. Open the project in any Java IDE
+2. Open the project in any Java IDE (IntelliJ / Eclipse / VS Code)
 3. Run `Main.java`
-4. Answer questions in the console
+4. Follow the on-screen instructions
 
 ---
 
-## 🔮 Future Enhancements
+## Learning Outcomes
 
-- Difficulty levels
-- Time-based questions
-- Negative marking
+- Understanding real interview-style question evaluation
+- Applying OOP principles in a practical project
+- Designing abstract-driven systems in Java
+- Building structured console applications
+
+---
+
+## Future Enhancements
+
+- Support for Easy / Medium / Hard dynamic selection
 - File-based question loading
-- GUI version (JavaFX / Swing)
+- Timer-based interview rounds
+- GUI version using JavaFX or Swing
+- Database integration for results storage
 
 ---
 
-## 👤 Author
+## Author
 
-**Parth Mahajan**    
+*Parth Mahajan*  
 - BTech Student | Java & Software Development Enthusiast  
 - GitHub: https://github.com/ParthMahajan1020  
 - Email: parth.mahajan1020@example.com  
