@@ -1,87 +1,84 @@
-# Interview Simulator – Core Java Project
+<h1 align="center">🎤 Interview Simulator – Core Java</h1>
 
-A console-based Interview Simulator built using pure Core Java.  
-This project simulates a real technical interview by evaluating a candidate through MCQs, theory questions, and coding logic questions, followed by a detailed scorecard and feedback.
-
----
-
-## Features
-
-- Role-based interview flow  
-  - Java Intern → Hard level questions  
-  - Java Developer → Medium level questions  
-
-- Question types:
-  - Multiple Choice Questions (MCQ)
-  - Theory-based questions
-  - Coding logic questions
-
-- Difficulty levels:
-  - MEDIUM
-  - HARD
-
-- Automatic evaluation and scoring
-- Section-wise marks (MCQ / Theory / Coding)
-- Final percentage, grade, and interview feedback
-- Fully console-based application
+<p align="center">
+  🚀 Console-based technical interview simulator with automated evaluation and feedback<br>
+  Built using <b>Core Java</b> with strong focus on <b>OOP principles</b>
+</p>
 
 ---
 
-## Tech Stack
+## 🚀 About Project
 
-- Language: Java  
-- Concepts Used:
-  - Object-Oriented Programming (OOP)
-  - Inheritance, Polymorphism, Abstraction
-  - Abstract classes and method overriding
-  - Collections (ArrayList)
-  - `instanceof` operator
-  - Scanner for input handling
+**Interview Simulator** is a console-based application that replicates a real-world technical interview environment.
 
-No frameworks or external libraries used.
+It evaluates candidates through a mix of **MCQs, theory questions, and coding logic**, then generates a detailed **scorecard, percentage, grade, and feedback** — simulating an actual interview experience.
 
 ---
 
-## How It Works
+## 🧠 Features
 
-1. Candidate enters name and role.
-2. Interview engine selects questions based on role difficulty.
-3. Questions are displayed one by one in the console.
+- 🎯 Role-based interview flow  
+  - Java Intern → Hard level  
+  - Java Developer → Medium level  
+
+- 📝 Multiple question types:
+  - MCQs  
+  - Theory questions  
+  - Coding logic questions  
+
+- 📊 Section-wise evaluation (MCQ / Theory / Coding)  
+- ⚡ Automatic scoring and instant results  
+- 🧾 Final report with percentage, grade, and feedback  
+- 💻 Fully console-based application  
+
+---
+
+## 🛠️ Tech Stack
+
+### 💬 Language
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
+</p>
+
+---
+
+### ⚙️ Core Concepts
+<p>
+  <img src="https://img.shields.io/badge/OOP-6A1B9A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Inheritance-283593?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Polymorphism-00897B?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Abstraction-AD1457?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Collections-0277BD?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ArrayList-5D4037?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Scanner-2E7D32?style=for-the-badge"/>
+</p>
+
+---
+
+## ⚙️ How It Works
+
+1. Candidate enters name and selects role  
+2. System assigns difficulty based on role  
+3. Questions are displayed one by one  
 4. Answers are evaluated automatically:
-   - MCQ → exact answer match
-   - Theory → keyword-based evaluation
-   - Coding → logic keywords and explanation length
-5. Marks are awarded instantly.
-6. Final scorecard, percentage, grade, and feedback are displayed.
+   - MCQ → exact match  
+   - Theory → keyword-based  
+   - Coding → logic + explanation length  
+5. Marks are calculated instantly  
+6. Final result with score, grade, and feedback is shown  
 
 ---
 
-## How to Run
+## 📂 Project Structure
 
-1. Clone the repository
-2. Open the project in any Java IDE (IntelliJ / Eclipse / VS Code)
-3. Run `Main.java`
-4. Follow the on-screen instructions
-
----
-
-## Learning Outcomes
-
-- Understanding real interview-style question evaluation
-- Applying OOP principles in a practical project
-- Designing abstract-driven systems in Java
-- Building structured console applications
-
----
-
-## Future Enhancements
-
-- Support for Easy / Medium / Hard dynamic selection
-- File-based question loading
-- Timer-based interview rounds
-- GUI version using JavaFX or Swing
-- Database integration for results storage
-
+```bash
+Interview-Simulator/
+│── Main.java
+│── InterviewEngine.java
+│── Question.java
+│── MCQQuestion.java
+│── TheoryQuestion.java
+```
 ---
 
 ## Author
@@ -91,4 +88,6 @@ No frameworks or external libraries used.
 - GitHub: https://github.com/ParthMahajan1020  
 - Email: parth.mahajan1020@example.com  
 - Passionate about building console applications, learning new programming languages, and exploring software projects.
-
+│── CodingQuestion.java
+│── Evaluator.java
+│── Result.java
